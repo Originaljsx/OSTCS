@@ -13,7 +13,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/) [![R](https://img.shields.io/badge/R-4.0+-red.svg)](https://www.r-project.org/) [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/) [![SLIM](https://img.shields.io/badge/Best%20Practices%20from-SLIM-blue)](https://nasa-ammos.github.io/slim/)
 
-The Ocean Spatiotemporal Clustering System (OSTCS) is a comprehensive geospatial remote sensing pipeline that integrates multi-mission NASA satellite data for oceanographic analysis using location-blind time series clustering techniques. The system implements functional data clustering via hypothesis testing k-means (Zambom et al., 2019) adapted for remote sensing applications, processing decade-long satellite datasets (2015-2025) to identify temporal patterns independent of spatial location before mapping results geographically.
+The Ocean Spatiotemporal Clustering System (OSTCS) is a comprehensive geospatial remote sensing pipeline that integrates multi-mission NASA satellite data for oceanographic analysis using time series clustering techniques. The system implements functional data clustering via hypothesis testing k-means (Zambom et al., 2019) adapted for remote sensing applications, processing decade long satellite datasets (2015-2025) to identify temporal patterns independent of spatial location before mapping results geographically.
 
 Developed at NASA JPL, OSTCS supports Earth science missions including SMAP (sea surface salinity), AQUA/MODIS (chlorophyll-a), and OSTIA (sea surface temperature) for operational oceanography research across four major coastal regions: Gulf of Mexico, Caribbean, California Current, and Pacific Northwest.
 
@@ -105,7 +105,7 @@ This guide provides a quick way to get started with OSTCS for oceanographic data
 
 **OSTCS follows a modular Jupyter notebook workflow. Each step corresponds to specific notebooks:**
 
-1. **Data Download and Merging**:
+1. **Preprocessing and Merging**:
    ```bash
    # Download satellite data for your variables:
    jupyter notebook "sss_download.ipynb"                    # SMAP sea surface salinity
