@@ -110,13 +110,13 @@ This guide provides a quick way to get started with OSTCS for oceanographic data
    # Download satellite data for your variables:
    jupyter notebook "sss_download.ipynb"                    # SMAP sea surface salinity
    jupyter notebook "SWOT L3 Download.ipynb"               # SWOT sea surface height
-   jupyter notebook "chl_downloader MO.ipynb"              # AQUA/MODIS chlorophyll (monthly)
-   jupyter notebook "OSTIA Download Daily to 7day mean.ipynb"  # OSTIA SST
+   jupyter notebook "OSTIA MO.ipynb"  # OSTIA SST
    
    # Merge individual files into time series:
    jupyter notebook "smap merge.ipynb"                      # Combine SMAP files
-   jupyter notebook "OISSS merge.ipynb"                     # Combine OISSS files  
-   jupyter notebook "regrid SMAP OISSS and merge.ipynb"    # Gap-fill and harmonize
+   python "merge_ostia.py"                                 # Combine OSTIA files
+   jupyter notebook "aquaMODIS merge.ipynb"                # Combine MODIS files 
+   jupyter notebook "SWOT L3 Clip and Merge Passes.ipynb"    # Combine SWOT files
    ```
 
 2. **Spatial Processing and Harmonization**:
@@ -130,7 +130,7 @@ This guide provides a quick way to get started with OSTCS for oceanographic data
    jupyter notebook "Regrid all to .10.ipynb"              # Multi-resolution harmonization
    ```
 
-3. **Functional Data Clustering Analysis**:
+3. **Functional Data Clustering Analysis on Multidimensional NetCDF Files**:
    ```bash
    # Apply test-based k-means clustering:
    jupyter notebook "gulf sss fkmeans.ipynb"               # Sea surface salinity
@@ -154,7 +154,7 @@ The system is notebook-based and does not require compilation. Simply ensure all
 
 1. **Test Data Access**:
    ```bash
-   jupyter notebook "inspect_nc.ipynb"  # Verify NetCDF file structure
+   jupyter notebook "inspect_nc.py"  # Verify NetCDF file structure
    ```
 
 2. **Validate Clustering Results**:
