@@ -154,7 +154,7 @@ The system is notebook-based and does not require compilation. Simply ensure all
 
 1. **Test Data Access**:
    ```bash
-   jupyter notebook "inspect_nc.py"  # Verify NetCDF file structure
+   python "inspect_nc.py"  # Verify NetCDF file structure
    ```
 
 2. **Validate Clustering Results**:
